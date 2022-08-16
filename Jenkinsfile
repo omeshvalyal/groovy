@@ -9,5 +9,13 @@ pipeline {
 					}
 				}
 			}
+			 stage('Checkout code from Git') {
+            steps {
+                script 
+                {
+                    checkout_git.checkout_git()
+                }
+            }
 		}
 	}
+}
