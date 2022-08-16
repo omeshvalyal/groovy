@@ -17,5 +17,12 @@ pipeline {
                 }
             }
 		}
+				stage('job trggering using aws codebuild'){
+					steps {
+						script {
+							awstrigger.awstrigg()
+						}
+					}
+				}
 	}
 }
